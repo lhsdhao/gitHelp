@@ -1,0 +1,15 @@
+1.初始化git仓库:git init
+
+2.设置用户姓名:git config --global user.name "huasong"
+
+3.设置用户邮箱:git config --global user.email "xxx@qq.com"
+
+4.放到仓库门口:git add ./readme.md
+
+5.提交:git commit -m "说明"
+
+6.查看当前工作区状态
+
+
+
+

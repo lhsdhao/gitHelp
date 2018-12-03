@@ -1,0 +1,19 @@
+创建数据库 use 新数据库 ,然后再新建一个集合并且插入一条数据即可
+
+删除集合:db.集合.drop();
+
+删除数据库:却换到要删除的数据库,执行:db.dropDatabase();
+
+修改集合数据  :db.集合.update({"name":"123"},{$set:{"name":435}});
+
+删除集合数据:db.集合.remove({条件});
+
+查看集合索引:db.集合.getIndexes();
+
+删除索引:db.集合.dropIndex();
+
+设置索引:db.集合.ensureIndex({"name":1});设置name索引
+
+分析执行时间:find().expliain('executionStas');
+
+设置唯一索引:db.集合.ersourIndex({"name":1},{"unique":true});

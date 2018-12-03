@@ -1,0 +1,38 @@
+开启mongodb服务器  mongod --dbpath 数据文件夹
+
+连接mongodb mongo  或 mongo IP:PORT
+
+创建数据库:  需要--> user 新数据库.表.insert({"";""})
+
+切换数据库 use dbname;
+
+查找:
+显示全部数据  db.集合.find();
+
+find()里面可以放条件,为集合
+
+等于:  db.集合.find({"age":20});
+
+大于: db.集合.find({"age":{$gt:20}});
+
+大于等于: db.集合.find({"age":{$gte:20}});
+
+小于:db.集合.find({"age":{$lt:20}});
+
+小于等于:db.集合.find({"age":{$lte:20}});
+
+&&  db.集合.find({"age":20,"name":"张三"});
+
+模糊查询 /  / :db.集合.find({"article":/女装/});
+
+查询指定列:db.集合.find({},{"naem":1})
+
+ 排序:find().sort({"age":1}); 以age进行升序排序,-1的话就是降序排序
+
+ 跳过两条,查找三条:find().skip(2).limit(2);
+
+ || or :  find($or:[{},{}])
+
+查询第一套数据 find({}).limit(1);或 findOne({});
+
+统计查询数:find({}).count();
