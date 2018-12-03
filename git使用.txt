@@ -4,11 +4,23 @@
 
 3.设置用户邮箱:git config --global user.email "xxx@qq.com"
 
-4.放到暂存区:git add ./readme.md
+4.放到暂存区:git add ./readme.md,或当前目录所有的文件提交到暂存区:git add ./
 
 5.提交到仓库:git commit -m "说明"
 
 6.查看当前工作区状态:git status
+
+7.直接提交到仓库,跳过暂存区:git commit --all -m "说明"
+
+8.查看git提交日志:git log
+
+9.查看git精简版日志:git log --oneline
+
+10.回退到指定版本:git reset --hard Hear~0(已Head指向回退,Head指向提交的最后一个版本,
+                                                    ~0就是回退到最后一次提交的版本)
+
+11.回退到指定版本号:git reset --hard 版本号(用 git log --oneline 可查看)
+
 
 
 
