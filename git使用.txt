@@ -23,6 +23,14 @@
 
 12.查看历史版本记录:git reflog
 
+13.创建新的分支:git branch dev
+
+14.查看分支:git branch
+
+15.切换到dev分支:git checkout dev
+
+16.合并分支-主分支合并副分支:git merge dev;
+
 
 
 
