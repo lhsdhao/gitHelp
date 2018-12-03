@@ -21,6 +21,8 @@
 
 11.回退到指定版本号:git reset --hard 版本号(用 git log --oneline 可查看)
 
+12.查看历史版本记录:git reflog
+
 
 
 
