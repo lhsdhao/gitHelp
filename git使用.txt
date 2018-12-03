@@ -44,7 +44,7 @@
 
 22.创建公钥私钥使用ssh操作仓库:生成密钥: ssh-keygen -t rsa -C "你的github注册邮箱"
 
-22.ssh 同样使用 push和pull 进行操作:例如 ssh push git@xx.com master
+22.ssh 同样使用 push和pull 进行操作:例如 git push git@xx.com master
 
 23.conflict 冲突,矛盾!
 
